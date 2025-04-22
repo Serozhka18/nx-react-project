@@ -16,7 +16,6 @@
       "!{projectRoot}/test-setup.[jt]s"
     ],
     "sharedGlobals": [
-      "{workspaceRoot}/.gitlab-ci.yml",
       "{workspaceRoot}/.github/workflows/ci.yml"
     ]
   },
