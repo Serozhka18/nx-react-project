@@ -15,7 +15,10 @@
       "!{projectRoot}/jest.config.[jt]s",
       "!{projectRoot}/test-setup.[jt]s"
     ],
-    "sharedGlobals": ["{workspaceRoot}/.gitlab-ci.yml"]
+    "sharedGlobals": [
+      "{workspaceRoot}/.gitlab-ci.yml",
+      "{workspaceRoot}/.github/workflows/ci.yml"
+    ]
   },
   "nxCloudId": "6807e2637852681f67395116",
   "plugins": [
