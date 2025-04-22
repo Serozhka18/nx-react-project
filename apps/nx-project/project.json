@@ -1,0 +1,28 @@
+{
+  "name": "nx-project",
+  "$schema": "https://json.schemastore.org/nx-project",
+  "sourceRoot": "apps/nx-project/src",
+  "projectType": "application",
+  "targets": {
+    "serve": {
+      "executor": "@nx/vite:dev-server",
+      "options": {
+        "configFile": "apps/nx-project/vite.config.ts",
+        "buildTarget": "nx-project:build"
+      }
+    },
+    "build": {
+      "executor": "@nx/vite:build",
+      "options": {
+        "configFile": "apps/nx-project/vite.config.ts",
+        "outputPath": "dist/apps/nx-project"
+      }
+    },
+    "preview": {
+      "executor": "@nx/vite:preview",
+      "options": {
+        "configFile": "apps/nx-project/vite.config.ts"
+      }
+    }
+  }
+}

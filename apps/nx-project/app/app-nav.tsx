@@ -6,8 +6,11 @@ export function AppNav() {
       <NavLink to="/" end>
         Home
       </NavLink>
-      <NavLink to="/about" end>
+      <NavLink to={{ pathname: 'about' }} end>
         About
+      </NavLink>
+      <NavLink to={{ pathname: 'products' }} end>
+        Products
       </NavLink>
     </nav>
   );
